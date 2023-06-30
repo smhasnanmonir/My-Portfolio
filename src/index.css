@@ -3,3 +3,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .skill-div {
+    @apply p-[30px] rounded-md bg-[#FF9C9C] w-[235px] space-y-2 text-center cursor-pointer transition-all ease-in-out duration-500;
+  }
+  .skill-div:hover {
+    @apply bg-[#fa7575]  scale-105 transform text-white;
+  }
+}
