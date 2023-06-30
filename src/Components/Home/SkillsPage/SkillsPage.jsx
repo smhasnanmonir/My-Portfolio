@@ -10,10 +10,10 @@ import mongodb from "../../../assets/icons8-mongodb.svg";
 const SkillsPage = () => {
   return (
     <div className="grid place-items-center mb-[50px] w-full">
-      <h1 className="text-center md:my-[55px] font-rubic text-[45px]">
+      <h1 className="text-center md:my-[55px] my-[45px] font-rubic text-[45px]">
         My Skills
       </h1>
-      <div className="grid md:grid-cols-4 gap-3 w-full">
+      <div className="grid md:grid-cols-4 gap-3 md:w-full place-items-center grid-cols-2 md-px-0 px-[25px]">
         <div className="skill-div">
           <img
             className="w-[35px] mx-auto font-rubic"
