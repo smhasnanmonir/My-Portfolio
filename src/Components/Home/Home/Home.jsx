@@ -2,10 +2,11 @@ import MyEducation from "../../MyEducation/MyEducation";
 import RecentProjects from "../../RecentProjects/RecentProjects";
 import FirstPage from "../FirstPage/FirstPage";
 import SkillsPage from "../SkillsPage/SkillsPage";
+import "./Home.css";
 
 const Home = () => {
   return (
-    <div>
+    <div className="md:max-w-5xl mx-auto">
       <FirstPage></FirstPage>
       <SkillsPage></SkillsPage>
       <RecentProjects></RecentProjects>

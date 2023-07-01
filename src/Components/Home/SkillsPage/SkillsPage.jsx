@@ -24,6 +24,7 @@ const SkillsPage = () => {
             />
             <p className="text-[18px] font-googleFont">HTML</p>
           </div>
+
           <div className="skill-div">
             <img
               className="w-[35px] mx-auto font-rubic"

@@ -30,6 +30,38 @@ const RecentProjects = () => {
                 </li>
               </ul>
             </div>
+            <div className="links flex gap-1 text-left">
+              <button
+                onClick={() =>
+                  window.open("https://cosummerschool.web.app/", "_blank")
+                }
+                className="p-3 bg-blue-500 text-white rounded-md mt-3 hover:bg-blue-700"
+              >
+                Website
+              </button>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://github.com/smhasnanmonir/Full-Stack-School-Website.git",
+                    "_blank"
+                  )
+                }
+                className="p-3 bg-blue-500 text-white rounded-md mt-3 hover:bg-blue-700"
+              >
+                Client Github
+              </button>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://github.com/smhasnanmonir/school-webiste-node-server-.git",
+                    "_blank"
+                  )
+                }
+                className="p-3 bg-blue-500 text-white rounded-md mt-3 hover:bg-blue-700"
+              >
+                Server Github
+              </button>
+            </div>
           </Fade>
         </div>
         {/* Project 2 */}

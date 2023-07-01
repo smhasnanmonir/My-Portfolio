@@ -1,4 +1,5 @@
 import bracuLogo from "../../../src/assets/bracu_logo.png";
+
 const MyEducation = () => {
   return (
     <div className="mb-[55px]">
