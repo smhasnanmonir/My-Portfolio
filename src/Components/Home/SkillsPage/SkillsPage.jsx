@@ -14,7 +14,7 @@ const SkillsPage = () => {
       <h1 className="text-center md:my-[55px] my-[45px] font-rubic text-[45px]">
         My Skills
       </h1>
-      <div className="grid md:grid-cols-4 gap-3 md:w-full place-items-center grid-cols-2 md-px-0 px-[25px]">
+      <div className="grid md:grid-cols-4 gap-3 md:w-full place-items-center grid-cols-2 md:px-[0px] px-[25px]">
         <Fade cascade damping={0.1} duration={1500}>
           <div className="skill-div">
             <img

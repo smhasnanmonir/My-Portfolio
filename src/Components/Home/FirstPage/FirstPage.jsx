@@ -1,5 +1,6 @@
 import { Bounce, Fade, Slide } from "react-awesome-reveal";
 import photo1 from "../../../assets/photo.png";
+import photo2 from "../../../assets/Frameportfolio3.png";
 const FirstPage = () => {
   return (
     <div className="flex justify-center items-center md:px-0 px-[25px] md:flex-row flex-col-reverse mt-[75px]">
@@ -20,13 +21,13 @@ const FirstPage = () => {
       {/* Photo div */}
       <div>
         <div className="md:block hidden">
-          <Slide damping={0.5} delay={2000}>
-            <img className="md:w-full" src={photo1} alt="My Image" />
+          <Slide damping={0.5} delay={2000} triggerOnce={true}>
+            <img className="md:w-[774px]" src={photo2} alt="My Image" />
           </Slide>
         </div>
         <div className="md:hidden block">
-          <Slide damping={0.5}>
-            <img className="md:w-full" src={photo1} alt="My Image" />
+          <Slide damping={0.5} triggerOnce={true}>
+            <img className="md:w-[774px]" src={photo2} alt="My Image" />
           </Slide>
         </div>
       </div>

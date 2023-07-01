@@ -11,4 +11,14 @@
   .skill-div:hover {
     @apply bg-[#fa7575]  scale-105 transform text-white;
   }
+
+  .project-div {
+    @apply rounded-md bg-[#FF9C9C] p-[25px] cursor-pointer transition-all ease-in-out duration-500;
+  }
+  .project-div:hover {
+    @apply bg-[#fa7575];
+  }
+  .project-img {
+    @apply w-[356px] rounded-md mb-2 hover:scale-[1.5] transition-all duration-300 ease-in-out cursor-zoom-in;
+  }
 }
