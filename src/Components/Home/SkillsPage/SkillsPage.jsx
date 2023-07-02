@@ -6,14 +6,16 @@ import javascript from "../../../assets/logo-javascript.svg";
 import react from "../../../assets/react-2.svg";
 import node from "../../../assets/icons8-node-js.svg";
 import mongodb from "../../../assets/icons8-mongodb.svg";
-import { Fade } from "react-awesome-reveal";
+import { Bounce, Fade } from "react-awesome-reveal";
 
 const SkillsPage = () => {
   return (
     <div className="grid place-items-center mb-[50px] w-full">
-      <h1 className="text-center md:my-[55px] my-[45px] font-rubic text-[45px]">
-        My Skills
-      </h1>
+      <Bounce>
+        <h1 className="text-center md:my-[55px] my-[45px] font-rubic text-[45px]">
+          My Skills
+        </h1>
+      </Bounce>
       <div className="grid md:grid-cols-4 gap-3 md:w-full place-items-center grid-cols-2 md:px-[0px] px-[25px]">
         <Fade cascade damping={0.1} duration={1500}>
           <div className="skill-div">

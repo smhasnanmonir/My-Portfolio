@@ -8,5 +8,5 @@ export default {
       rubic: ["Rubik", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

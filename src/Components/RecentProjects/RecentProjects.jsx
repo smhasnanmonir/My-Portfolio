@@ -1,17 +1,19 @@
-import { Fade } from "react-awesome-reveal";
+import { Bounce, Fade } from "react-awesome-reveal";
 import summerSchool from "../../../src/assets/summerSchool.png";
 const RecentProjects = () => {
   return (
     <div className="md:px-[0px] px-[25px]">
-      <h1 className="text-center font-googleFont text-[45px] my-[55px]">
-        Recent Projects
-      </h1>
+      <Bounce>
+        <h1 className="text-center font-googleFont text-[45px] my-[55px]">
+          Recent Projects
+        </h1>
+      </Bounce>
       <div className=" grid md:grid-cols-2 gap-[16px] grid-cols-1">
         {/* Project 1 */}
         <div className="rounded-md project-div">
           <Fade cascade damping={0.25} duration={2500}>
             <img
-              className="project-img"
+              className="project-img w-fit"
               src={summerSchool}
               alt="Summer School Image"
             />
@@ -68,7 +70,7 @@ const RecentProjects = () => {
         <div className="rounded-md project-div">
           <Fade cascade damping={0.25} duration={3500}>
             <img
-              className="project-img"
+              className="project-img w-fit"
               src={summerSchool}
               alt="Summer School Image"
             />
