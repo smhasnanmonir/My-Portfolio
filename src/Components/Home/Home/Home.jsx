@@ -1,4 +1,4 @@
-import Headers from "../../Headers/Headers";
+import Headers from "../../Headers.jsx/Headers";
 import MyEducation from "../../MyEducation/MyEducation";
 import RecentProjects from "../../RecentProjects/RecentProjects";
 import FirstPage from "../FirstPage/FirstPage";

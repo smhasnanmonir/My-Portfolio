@@ -11,9 +11,12 @@ import { Bounce, Fade } from "react-awesome-reveal";
 const SkillsPage = () => {
   return (
     <div className="grid place-items-center mb-[50px] w-full">
-      <Bounce>
-        <h1 className="text-center md:my-[55px] my-[45px] font-rubic text-[45px]">
+      <Bounce cascade>
+        <h1 className="text-center md:mt-[55px] mt-[45px] font-rubic text-[45px]">
           My Skills
+        </h1>
+        <h1 className="text-center md:mb-[55px]  font-rubic text-[25px]">
+          I have been working last few months to learn these
         </h1>
       </Bounce>
       <div className="grid md:grid-cols-4 gap-3 md:w-full place-items-center grid-cols-2 md:px-[0px] px-[25px]">

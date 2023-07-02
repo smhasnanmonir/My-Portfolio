@@ -3,7 +3,7 @@ import bracuLogo from "../../../src/assets/bracu_logo.png";
 
 const MyEducation = () => {
   return (
-    <div className="mb-[55px]">
+    <div className="mb-[55px]" id="education">
       <Bounce>
         <h1 className="font-rubic text-center text-[44px] my-[55px]">
           My Education

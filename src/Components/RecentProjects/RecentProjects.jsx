@@ -2,7 +2,7 @@ import { Bounce, Fade } from "react-awesome-reveal";
 import summerSchool from "../../../src/assets/summerSchool.png";
 const RecentProjects = () => {
   return (
-    <div className="md:px-[0px] px-[25px]">
+    <div className="md:px-[0px] px-[25px]" id="projects">
       <Bounce>
         <h1 className="text-center font-googleFont text-[45px] my-[55px]">
           Recent Projects
