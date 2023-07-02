@@ -4,7 +4,7 @@ const Headers = () => {
   const commonNavbar = (
     <>
       <nav>
-        <ul className="flex gap-8">
+        <ul className="flex gap-8 md:flex-row flex-col">
           <li className="text-xl font-rubic text-black font-thin cursor-pointer">
             About
           </li>
@@ -15,6 +15,9 @@ const Headers = () => {
             Education
           </li>
           <li className="text-xl font-rubic text-black font-thin cursor-pointer">
+            Recent Projects
+          </li>
+          <li className="text-xl font-rubic text-black font-thin cursor-pointer">
             Contact Me
           </li>
         </ul>
@@ -22,10 +25,10 @@ const Headers = () => {
     </>
   );
   return (
-    <div className="navbar z-[999] max-w-5xl bg-opacity-70 backdrop-blur-[25px] text-white fixed top-0">
+    <div className="navbar z-[999] max-w-5xl bg-opacity-70 backdrop-blur-[25px] text-white fixed top-0 md:bg-white bg-blue-50">
       <div className="navbar-start">
         <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <label tabIndex={0} className="btn btn-primary lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -48,18 +51,18 @@ const Headers = () => {
             {commonNavbar}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl text-black">
+        <a className="btn btn-ghost normal-case text-xl text-black md:block hidden">
           S.M Hasnan Monir
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{commonNavbar}</ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end w-full">
         <a
           href={resume}
           target="blank"
-          className="flex gap-2 items-center mt-2 text-black rounded-md p-3 w-[205px] font-rubic hover:text-white hover:cursor-pointer"
+          className="flex gap-2 items-center mt-2 text-black rounded-md p-3 md:w-[205px] w-full font-rubic hover:text-red-600 hover:cursor-pointer"
         >
           <img className="w-[25px]" src={download} alt="" />
           <button>Download Resume</button>

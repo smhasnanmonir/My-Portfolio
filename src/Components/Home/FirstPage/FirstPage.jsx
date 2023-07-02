@@ -7,7 +7,7 @@ import bg from "../../../assets/endless-constellation.svg";
 import "./Firstpage.css";
 const FirstPage = () => {
   return (
-    <div className="first-page-bg flex justify-center items-center md:px-0 md:flex-row flex-col-reverse">
+    <div className="first-page-bg flex justify-center items-center md:px-0 px-[25px] md:flex-row flex-col-reverse">
       {/* Text Content div */}
       <div className="w-full space-y-[7px] md:mb-0 mt-[45px]">
         <Fade cascade damping={0.5} duration={2000} triggerOnce={true}>
