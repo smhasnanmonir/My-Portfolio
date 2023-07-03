@@ -1,4 +1,4 @@
-import resume from "../../../src/assets/Resume.pdf";
+import resume from "../../../src/assets/S.M_Hasnan_Resume.pdf";
 import download from "../../../src/assets/icons8-download-80.png";
 const Headers = () => {
   const commonNavbar = (
@@ -41,7 +41,13 @@ const Headers = () => {
           >
             Education
           </li>
-          <li className="text-xl font-rubic text-black font-thin cursor-pointer">
+          <li
+            onClick={() => {
+              const anchor = document.querySelector("#contact");
+              anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+            }}
+            className="text-xl font-rubic text-black font-thin cursor-pointer"
+          >
             Contact Me
           </li>
         </ul>

@@ -1,3 +1,4 @@
+import ContactMe from "../../ContactMe/ContactMe";
 import Headers from "../../Headers.jsx/Headers";
 import MyEducation from "../../MyEducation/MyEducation";
 import RecentProjects from "../../RecentProjects/RecentProjects";
@@ -13,6 +14,7 @@ const Home = () => {
       <SkillsPage></SkillsPage>
       <RecentProjects></RecentProjects>
       <MyEducation></MyEducation>
+      <ContactMe></ContactMe>
     </div>
   );
 };

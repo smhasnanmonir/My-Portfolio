@@ -1,16 +1,16 @@
 import html from "../../../assets/html-1.svg";
 import css from "../../../assets/css-3.svg";
-import bootstrap from "../../../assets/icons8-bootstrap.svg";
 import tailwind from "../../../assets/icons8-tailwind-css.svg";
 import javascript from "../../../assets/logo-javascript.svg";
 import react from "../../../assets/react-2.svg";
 import node from "../../../assets/icons8-node-js.svg";
 import mongodb from "../../../assets/icons8-mongodb.svg";
+import firebase from "../../../assets/icons8-firebase.svg";
 import { Bounce, Fade } from "react-awesome-reveal";
 
 const SkillsPage = () => {
   return (
-    <div className="grid place-items-center mb-[50px] w-full">
+    <div className="grid place-items-center mb-[50px] w-full" id="skills">
       <Bounce cascade>
         <h1 className="text-center md:mt-[55px] mt-[45px] font-rubic text-[45px]">
           My Skills
@@ -38,14 +38,7 @@ const SkillsPage = () => {
             />
             <p className="text-[18px] font-googleFont">CSS</p>
           </div>
-          <div className="skill-div">
-            <img
-              className="w-[35px] mx-auto font-rubic"
-              src={bootstrap}
-              alt="bootstrap svg"
-            />
-            <p className="text-[18px] font-googleFont">BootStrap</p>
-          </div>
+
           <div className="skill-div">
             <img
               className="w-[35px] mx-auto font-rubic"
@@ -73,11 +66,20 @@ const SkillsPage = () => {
           <div className="skill-div">
             <img
               className="w-[35px] mx-auto font-rubic"
+              src={firebase}
+              alt="firebase svg"
+            />
+            <p className="text-[18px] font-googleFont">Firebase</p>
+          </div>
+          <div className="skill-div">
+            <img
+              className="w-[35px] mx-auto font-rubic"
               src={node}
               alt="Node svg"
             />
             <p className="text-[18px] font-googleFont">NodeJs</p>
           </div>
+
           <div className="skill-div">
             <img
               className="w-[35px] mx-auto font-rubic"
