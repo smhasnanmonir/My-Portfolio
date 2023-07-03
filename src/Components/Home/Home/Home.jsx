@@ -1,4 +1,5 @@
 import ContactMe from "../../ContactMe/ContactMe";
+import Footer from "../../Footer/Footer";
 import Headers from "../../Headers.jsx/Headers";
 import MyEducation from "../../MyEducation/MyEducation";
 import RecentProjects from "../../RecentProjects/RecentProjects";
@@ -15,6 +16,7 @@ const Home = () => {
       <RecentProjects></RecentProjects>
       <MyEducation></MyEducation>
       <ContactMe></ContactMe>
+      <Footer></Footer>
     </div>
   );
 };

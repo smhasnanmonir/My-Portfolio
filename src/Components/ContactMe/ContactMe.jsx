@@ -2,14 +2,9 @@ import emailjs from "@emailjs/browser";
 import contact from "../../../src/assets/contact.png";
 import { useRef } from "react";
 import Swal from "sweetalert2";
-import { Slide } from "react-awesome-reveal";
-import { useForm } from "react-hook-form";
+import { Bounce, Slide } from "react-awesome-reveal";
 
 const ContactMe = () => {
-  const {
-    register,
-    formState: { errors },
-  } = useForm();
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -46,18 +41,20 @@ const ContactMe = () => {
   };
   return (
     <div id="contact">
-      <h1 className="text-[45px] font-rubic text-center py-[55px]">
-        Contact Me
-      </h1>
+      <Bounce>
+        <h1 className="text-[45px] font-rubic text-center py-[55px]">
+          Contact Me
+        </h1>
+      </Bounce>
       <div className="md:px-0 px-[25px] mb-14 flex md:flex-row flex-col md:gap-[55px] gap-[35px] justify-center items-center">
         <div className="md:w-1/2">
-          <Slide cascade damping={0.1} direction="left">
+          <Slide cascade damping={0.1} direction="left" duration={1500}>
             <img className="w-full" src={contact} alt="Contact.png" />
           </Slide>
         </div>
         <div className="grid place-items-center md:w-1/2 w-full">
-          <Slide cascade damping={0.1} direction="right">
-            <form className="w-full" ref={form} onSubmit={sendEmail}>
+          <form className="w-full" ref={form} onSubmit={sendEmail}>
+            <Slide direction="right" duration={1500}>
               <label>Name</label>
               <input
                 className="form-group w-full"
@@ -77,8 +74,8 @@ const ContactMe = () => {
                 type="submit"
                 value="Send"
               />
-            </form>
-          </Slide>
+            </Slide>
+          </form>
         </div>
       </div>
     </div>

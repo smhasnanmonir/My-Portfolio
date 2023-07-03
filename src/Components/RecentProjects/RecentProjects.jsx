@@ -1,5 +1,6 @@
 import { Bounce, Fade } from "react-awesome-reveal";
 import summerSchool from "../../../src/assets/summerSchool.png";
+import bistroBoss from "../../../src/assets/project2.jpg";
 const RecentProjects = () => {
   return (
     <div className="md:px-[0px] px-[25px]" id="projects">
@@ -11,9 +12,9 @@ const RecentProjects = () => {
       <div className=" grid md:grid-cols-2 gap-[16px] grid-cols-1">
         {/* Project 1 */}
         <div className="rounded-md project-div">
-          <Fade cascade damping={0.25} duration={2500}>
+          <Fade cascade damping={0.25} duration={750}>
             <img
-              className="project-img w-fit"
+              className="project-img w-fit z-[-1]"
               src={summerSchool}
               alt="Summer School Image"
             />
@@ -68,30 +69,73 @@ const RecentProjects = () => {
         </div>
         {/* Project 2 */}
         <div className="rounded-md project-div">
-          <Fade cascade damping={0.25} duration={3500}>
+          <Fade cascade damping={0.25} duration={1500}>
             <img
               className="project-img w-fit"
-              src={summerSchool}
+              src={bistroBoss}
               alt="Summer School Image"
             />
             <h1 className="mt-2 font-rubic text-[22px] font-light">
-              Summer School
+              Restaurant Website
             </h1>
             <div className="md:ml-[25px]">
               <ul
                 style={{ listStyleType: "lower-roman" }}
                 className="font-rubic font-light space-y-2"
               >
-                <li className="font-rubic">Students can buy courses.</li>
-                <li className="font-rubic">Instructors can add courses.</li>
+                <li className="font-rubic">Users can order food</li>
+                <li className="font-rubic">Admin can see all ordered food</li>
                 <li className="font-rubic">
-                  Admins can deny or approve courses.
+                  Admins can delete or add food of the menu.
                 </li>
               </ul>
+            </div>
+            <div className="links flex gap-1 text-left">
+              <button
+                onClick={() =>
+                  window.open("https://smbistroboss.web.app/", "_blank")
+                }
+                className="p-3 bg-blue-500 text-white rounded-md mt-3 hover:bg-blue-700"
+              >
+                Website
+              </button>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://github.com/smhasnanmonir/Full-Stack-Restaurant-Website.git",
+                    "_blank"
+                  )
+                }
+                className="p-3 bg-blue-500 text-white rounded-md mt-3 hover:bg-blue-700"
+              >
+                Client Github
+              </button>
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://github.com/smhasnanmonir/bistro-server.git",
+                    "_blank"
+                  )
+                }
+                className="p-3 bg-blue-500 text-white rounded-md mt-3 hover:bg-blue-700"
+              >
+                Server Github
+              </button>
             </div>
           </Fade>
         </div>
       </div>
+      <h1
+        onClick={() =>
+          window.open("https://github.com/smhasnanmonir", "_blank")
+        }
+        className="text-xl font-rubic text-center py-4"
+      >
+        See more at my{" "}
+        <span className="cursor-pointer text-red-400 hover:text-red-500 underline">
+          Github
+        </span>
+      </h1>
     </div>
   );
 };
