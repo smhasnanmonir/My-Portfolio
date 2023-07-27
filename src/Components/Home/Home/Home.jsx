@@ -9,7 +9,7 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="md:max-w-5xl mx-auto">
+    <div className="md:max-w-5xl mx-auto overflow-hidden">
       <Headers></Headers>
       <FirstPage></FirstPage>
       <SkillsPage></SkillsPage>
