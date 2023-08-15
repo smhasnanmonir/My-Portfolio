@@ -1,6 +1,6 @@
 import { Bounce, Fade } from "react-awesome-reveal";
 import summerSchool from "../../../src/assets/summerSchool.png";
-import bistroBoss from "../../../src/assets/project2.jpg";
+import universal from "../../../src/assets/ss.png";
 const RecentProjects = () => {
   return (
     <div className="md:px-[0px] px-[25px]" id="projects">
@@ -72,11 +72,11 @@ const RecentProjects = () => {
           <Fade cascade damping={0.25} duration={1500}>
             <img
               className="project-img w-fit"
-              src={bistroBoss}
+              src={universal}
               alt="Summer School Image"
             />
             <h1 className="mt-2 font-rubic text-[22px] font-light">
-              Restaurant Website
+              A Real Estate Website
             </h1>
             <div className="md:ml-[25px]">
               <ul
@@ -93,7 +93,10 @@ const RecentProjects = () => {
             <div className="links flex gap-1 text-left">
               <button
                 onClick={() =>
-                  window.open("https://smbistroboss.web.app/", "_blank")
+                  window.open(
+                    "https://sm-realestate-project.netlify.app/",
+                    "_blank"
+                  )
                 }
                 className="p-3 bg-blue-500 text-white rounded-md mt-3 hover:bg-blue-700"
               >
@@ -102,24 +105,13 @@ const RecentProjects = () => {
               <button
                 onClick={() =>
                   window.open(
-                    "https://github.com/smhasnanmonir/Full-Stack-Restaurant-Website.git",
+                    "https://github.com/smhasnanmonir/Demo-Real-Estate-Website.git",
                     "_blank"
                   )
                 }
                 className="p-3 bg-blue-500 text-white rounded-md mt-3 hover:bg-blue-700"
               >
                 Client Github
-              </button>
-              <button
-                onClick={() =>
-                  window.open(
-                    "https://github.com/smhasnanmonir/bistro-server.git",
-                    "_blank"
-                  )
-                }
-                className="p-3 bg-blue-500 text-white rounded-md mt-3 hover:bg-blue-700"
-              >
-                Server Github
               </button>
             </div>
           </Fade>
